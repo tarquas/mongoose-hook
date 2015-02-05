@@ -1,0 +1,51 @@
+{
+  "name": "mongoose-hook",
+  "version": "0.1.1",
+  "description": "Abstract mongoose plugin, allowing usage of 'pre' and 'post' hooks on internal direct wrappers to database API for all (including static) mongoose operations.",
+  "license": "MIT",
+  "homepage": "https://github.com/tarquas/mongoose-hook",
+  "main": "./lib/v0/mongoose-hook.js",
+
+  "dependencies": {
+  },
+
+  "files": [
+    "./lib/v0"
+  ],
+
+  "bugs": {
+    "url": "https://github.com/tarquas/mongoose-hook/issues",
+    "email": "tarquas@gmail.com"
+  },
+  
+  "directories": {
+    "lib": "./lib"
+  },
+  
+  "keywords": [
+    "mongoose",
+    "plugin",
+    "hook",
+    "internal",
+    "wrapper",
+    "mongo",
+    "pre",
+    "post"
+  ],
+  
+  "author": {
+    "name": "Taras Mykhailovych",
+    "email": "tarquas@gmail.com",
+    "url": "http://194.44.203.87/tarquas/"
+  },
+  
+  "contributors": [
+    {"name": "Staff.com", "url": "https://staff.com/"},
+    {"name": "Time Doctor", "url": "https://timedoctor.com/"}
+  ],
+  
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tarquas/mongoose-hook.git"
+  }
+}
