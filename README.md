@@ -3,13 +3,13 @@ Abstract mongoose plugin, allowing usage of 'pre' and 'post' hooks on internal d
 
 # Installation
 ```shell
-npm i mongoose-hook
+git clone git@github.com:tarquas/mongoose-hook.git mongoose-hook
 ```
 
 # Package
 ```js
 {
-  "mongoose-hook": "~0.1.1"
+  "mongoose-hook": "tarquas/mongoose-hook#4492773e14"
 }
 ```
 
