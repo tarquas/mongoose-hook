@@ -74,3 +74,5 @@ schema.post('save', function(next) {
 ```
 
 The difference is that post 'save' hook is not called for `Model.create(...)` method; the post 'insert' hook is called in either case, because mongoose calls underlying `insert` wrapper of database API anyway.
+
+* `this` object, which is passed to hook function is an instance of `mongoose.Collection`. Please, refer to `mongoose` manuals for its API. Also, this plugin adds `getModel()` method to `mongoose.Collection` prototype, which returns a `Model` (made by `mongoose.model()`), which refers to given `mongoose.Collection` instance.
