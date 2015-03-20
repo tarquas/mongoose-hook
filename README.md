@@ -26,10 +26,8 @@ var
   thisPlugin = {};
 
 thisPlugin.pre = function(p, callback) {
-  switch (p.method) {
-    case 'insert':
-      p.insert[this.watermarkPath] = this.watermarkValue;
-      break;
+  if (p.insert) {
+    p.insert[this.watermarkPath] = this.watermarkValue;
   }
 
   callback();
@@ -73,6 +71,6 @@ schema.post('save', function(next) {
 });
 ```
 
-The difference is that post 'save' hook is not called for `Model.create(...)` method; the post 'insert' hook is called in either case, because mongoose calls underlying `insert` wrapper of database API anyway.
+The difference is that post 'save' hook is not called for `Model.create(...)` method; the post 'insert' hook is called in either case, because mongoose calls underlying `insert` wrapper of database API anyway. Also, in example above `p.insert` may also refer to `$setOnInsert` object on upsert operation.
 
 * `this` object, which is passed to hook function is an instance of `mongoose.Collection`. Please, refer to `mongoose` manuals for its API. Also, this plugin adds `getModel()` method to `mongoose.Collection` prototype, which returns a `Model` (made by `mongoose.model()`), which refers to given `mongoose.Collection` instance.
