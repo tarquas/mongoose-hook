@@ -1,6 +1,6 @@
 {
   "name": "mongoose-hook",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "Abstract mongoose plugin, allowing usage of 'pre' and 'post' hooks on internal direct wrappers to database API for all (including static) mongoose operations.",
   "license": "MIT",
   "homepage": "https://github.com/tarquas/mongoose-hook",
@@ -9,19 +9,11 @@
   "dependencies": {
   },
 
-  "files": [
-    "./lib/v0"
-  ],
-
   "bugs": {
     "url": "https://github.com/tarquas/mongoose-hook/issues",
     "email": "tarquas@gmail.com"
   },
-  
-  "directories": {
-    "lib": "./lib"
-  },
-  
+
   "keywords": [
     "mongoose",
     "plugin",
